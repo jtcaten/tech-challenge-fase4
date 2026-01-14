@@ -133,12 +133,12 @@ with st.sidebar:
     st.header("⚙️ Configurações")
 
     date_min = df["date"].min().date()
-    date_max = df["date"].max().date()
+    date_max = df["date"].max().date() 
 
-    # Período padrão: últimos 365 dias (ou tudo, se histórico menor)
+    # Período padrão: últimos 365 dias
     default_start = max(
         date_min,
-        (date_max - pd.Timedelta(days=365)),
+        date_max - pd.Timedelta(days=365),
     ).date()
 
     date_range = st.slider(
@@ -153,6 +153,7 @@ with st.sidebar:
         (df["date"] >= pd.Timestamp(date_range[0]))
         & (df["date"] <= pd.Timestamp(date_range[1]))
     ]
+
 
 # =========================
 # MÉTRICAS SUPERIORES
