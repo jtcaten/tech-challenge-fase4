@@ -315,6 +315,5 @@ with tab4:
         st.write(f"**Features utilizadas:** {model_info['feature_count']}")
         st.write(f"**Data treino:** {model_info['training_date']}")
 
-    st.write('
-**Últimas 10 linhas:**')
+    st.write('**Últimas 10 linhas:**')
     st.dataframe(df[['date', 'close', 'usd_close', 'selic']].tail(10), use_container_width=True)
