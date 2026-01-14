@@ -5,3 +5,4 @@ matplotlib
 joblib
 statsmodels
 scikit-learn
+plotly
