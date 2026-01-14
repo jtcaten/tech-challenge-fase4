@@ -294,8 +294,7 @@ with tab3:
     with col2:
         st.write('**Modelos Comparados:**')
         for model_name, metrics in model_info['all_models'].items():
-            st.write(f"
-**{model_name}**")
+            st.write(f"**{model_name}**")
             st.write(f"Accuracy: {metrics['accuracy']:.2%}")
             st.write(f"F1-Score: {metrics['f1']:.2%}")
 
