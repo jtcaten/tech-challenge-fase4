@@ -71,7 +71,7 @@ A aplicação desenvolvida com Streamlit oferece:
 
 2. Execute a aplicação:
    ```bash
-   streamlit run app.py
+   streamlit run app_.py
    ```
 
 ---
