@@ -139,7 +139,7 @@ with st.sidebar:
     default_start = max(
         date_min,
         (date_max - pd.Timedelta(days=365)),
-    )
+    ).date()
 
     date_range = st.slider(
         "Período para análise",
