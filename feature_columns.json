@@ -1,0 +1,30 @@
+{
+  "feature_columns": [
+    "usd_close",
+    "selic",
+    "sinal_t1",
+    "sinal_t2",
+    "sinal_t3",
+    "sinal_t5",
+    "sinal_t10",
+    "returns_lag1",
+    "returns_lag2",
+    "returns_lag3",
+    "returns_lag4",
+    "returns_lag5",
+    "returns_lag6",
+    "returns_lag7",
+    "returns_lag8",
+    "returns_lag9",
+    "returns_lag10",
+    "sinal_usd_up",
+    "usd_change",
+    "selic_subindo",
+    "selic_change",
+    "sinal_ma5_ma20",
+    "close_acima_ma5",
+    "close_acima_ma20",
+    "rsi",
+    "volatility"
+  ]
+}
