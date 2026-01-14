@@ -131,16 +131,22 @@ df_feat = create_features(df).dropna()
 # =========================
 with st.sidebar:
     st.header("⚙️ Configurações")
-    date_range = st.date_input(
+
+    date_min = df["date"].min().date()
+    date_max = df["date"].max().date()
+
+    date_range = st.slider(
         "Período para análise",
-        value=(df["date"].max().date() - pd.Timedelta(days=365), df["date"].max().date()),
-        min_value=df["date"].min().date(),
-        max_value=df["date"].max().date(),
+        min_value=date_min,
+        max_value=date_max,
+        format="YYYY-MM-DD",
     )
+
     df_filtered = df[
         (df["date"] >= pd.Timestamp(date_range[0]))
         & (df["date"] <= pd.Timestamp(date_range[1]))
     ]
+
 
 
 
