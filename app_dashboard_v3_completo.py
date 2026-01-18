@@ -425,4 +425,4 @@ with tab4:
 st.divider()
 
 # Footer
-st.caption("🚀 Dashboard de Previsão v3 - Todos os erros corrigidos")
+st.caption("🚀 Dashboard de Previsão v1")
